@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PayerController;
+use App\Http\Controllers\PlatformController;
 use App\Http\Controllers\ReceiverController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -11,3 +12,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('receiver', ReceiverController::class);
 Route::apiResource('payer', PayerController::class);
+Route::apiResource('platform', PlatformController::class);
