@@ -10,4 +10,9 @@ class Receiver extends Model
     use HasFactory;
 
     protected $fillable = ['receiver_name', 'document_type', 'receiver_id', 'bank', 'bank_account', 'receiver_percentage'];
+
+    public function income()
+    {
+        return $this->hasMany(Period::class);
+    }
 }

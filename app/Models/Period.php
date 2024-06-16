@@ -15,4 +15,9 @@ class Period extends Model
     {
         return $this->belongsTo(Platform::class);
     }
+
+    public function income()
+    {
+        return $this->hasMany(Period::class);
+    }
 }

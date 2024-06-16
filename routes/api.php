@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IncomeController;
 use App\Http\Controllers\PayerController;
 use App\Http\Controllers\PeriodController;
 use App\Http\Controllers\PlatformController;
@@ -15,3 +16,4 @@ Route::apiResource('receiver', ReceiverController::class);
 Route::apiResource('payer', PayerController::class);
 Route::apiResource('platform', PlatformController::class);
 Route::apiResource('period', PeriodController::class);
+Route::apiResource('income', IncomeController::class);
