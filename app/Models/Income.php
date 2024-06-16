@@ -20,4 +20,9 @@ class Income extends Model
     {
         return $this->belongsTo(Platform::class);
     }
+
+    public function distribution()
+    {
+        return $this->hasMany(Period::class);
+    }
 }
